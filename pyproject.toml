@@ -7,6 +7,8 @@ dependencies = [
   "qrcode[pil] >= 8.0",
   "requests >= 2.32.3",
   "beautifulsoup4 >= 4.12.3",
+  "blabel >= 0.1.6",
+  "PyMuPDF >= 1.25.2",
 ]
 name = "mcm-label"
 version = "0.0.1"

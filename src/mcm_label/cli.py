@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import argparse
 import pathlib
 
-from mcm_label.mcm_label import Order, Part
+from mcm_label.mcm_label import Label, Order, Part
 
 
 def is_valid_file(parser, arg: str) -> pathlib.Path:
@@ -47,7 +47,9 @@ def main():
             copy.find("p", class_=None).text.strip(),
             img_path,
         )
-        order.parts.append(part)
 
-    for part in order.parts:
-        print(part)
+        label = Label(part)
+        order.parts.append(part)
+        order.labels.append(label)
+
+    order.render()
