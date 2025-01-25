@@ -36,11 +36,13 @@ def main():
         type=lambda x: is_valid_file(parser, x),
         metavar="FILE",
         default=".",
+        help="Path to a McMaster order html file, or the folder containing one",
     )
     parser.add_argument(
         "-d",
         "--debug",
         action="store_true",
+        help="Enables outputting raw html and pdfs of labels",
     )
     args = parser.parse_args()
 

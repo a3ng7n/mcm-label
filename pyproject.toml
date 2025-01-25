@@ -24,4 +24,4 @@ license = "MIT"
 license-files = ["LICEN[CS]E*"]
 
 [project.scripts]
-cli = "mcm_label.cli:main"
+mcm-label = "mcm_label.cli:main"
