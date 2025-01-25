@@ -114,6 +114,10 @@ class Part:
     pn: str
     name: str
     image: pathlib.Path
+    pn_seq: str = field(init=False)
+
+    def __post_init__(self, *args, **kwargs):
+        self.pn_seq = self.pn + "\r1\r"
 
 
 @dataclass
