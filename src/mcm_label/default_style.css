@@ -1,18 +1,73 @@
 @page {
   width: 1.5in;
   height: 1in;
-  padding: 0.5mm;
 }
-img {
-  height: 6.4mm;
-  display: inline-block;
-  vertical-align: middle;
+
+.print-area {
+  box-sizing: border-box;
+  width: 1.5in;
+  height: 1in;
+  padding: 5px 5px;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+}
+
+.metadata {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.part-number {
+  font: 0.75rem/1 Verdana;
+  display: block;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.bottom {
+  font: bold 0.5rem/1 Verdana;
+  display: block;
+  word-wrap: break-word;
+  flex-shrink: 0;
+  height: 35%;
+}
+
+.qr-code {
+  display: block;
+  height: 100%;
+}
+
+.qr-code img {
   image-rendering: pixelated;
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  flex-shrink: 1;
 }
-.label {
-  font-family: Verdana;
-  font-weight: bold;
-  vertical-align: middle;
-  display: inline-block;
-  font-size: 7px;
+
+.thumbnail {
+  flex-shrink: 1;
+}
+
+.thumbnail img {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  flex-shrink: 1;
 }
