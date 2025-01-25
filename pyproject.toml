@@ -24,3 +24,6 @@ license-files = ["LICEN[CS]E*"]
 
 [project.scripts]
 mcm-label = "mcm_label.cli:main"
+
+[project.urls]
+GitHub = "https://github.com/a3ng7n/mcm-label"
