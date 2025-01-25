@@ -1,6 +1,11 @@
 # mcm-label
 
 A command line utility to create scannable labels for McMaster parts.
+Order Line Item             |  Label
+:-------------------------:|:-------------------------:
+![image](https://github.com/user-attachments/assets/7c432c1b-a183-4cf9-a4b1-9a14bbb0d1b2) | ![image](https://github.com/user-attachments/assets/5cbb498b-b662-43f1-aed7-17e6aed98d87)
+
+
 
 ## Installation
 
